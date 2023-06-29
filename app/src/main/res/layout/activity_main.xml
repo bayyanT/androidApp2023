@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+     android:layout_margin="10dp"
+    android:padding="10dp"
+
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activties.MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_margin="8dp"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:textStyle="italic"
+        android:textSize="10pt"
+        android:layout_height="wrap_content"
+        android:text="Welcome ... "/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:hint="search for specified products"
+
+        app:startIconDrawable="@drawable/baseline_search_24"
+        android:id="@+id/searchId"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:padding="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/main_category"
+        android:layout_margin="10dp"
+        android:id="@+id/catNameId"
+        android:padding="10dp"
+       android:textColor="#FF0F00"
+        android:textStyle="italic|bold"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recCat"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/doctors_in_pharmacy"
+        android:layout_margin="10dp"
+
+        android:padding="10dp"
+        android:textColor="#FF0F00"
+        android:textStyle="italic|bold"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/doctorsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/popular"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textSize="9pt"
+        android:textColor="#FF0F00"
+        android:textStyle="italic|bold"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/RList"/>
+
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

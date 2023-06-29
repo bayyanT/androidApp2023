@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">pro2023</string>
+    <string name="welcome_to_pharmacy_app">      Welcome to Pharmacy App</string>
+    <string name="don_t_have_an_account_create_new_one">Don\'t have an Account ? Create new one !</string>
+    <string name="location">Location</string>
+    <string name="customer">Customer</string>
+    <string name="employee">Employee</string>
+    <string name="category_1">category_1</string>
+    <string name="main_category">Main Category</string>
+    <string name="doctors_in_pharmacy">Doctors in pharmacy</string>
+    <string name="popular">Popular</string>
+</resources>

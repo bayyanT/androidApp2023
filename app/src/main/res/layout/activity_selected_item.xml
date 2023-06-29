@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:elevation="20dp"
+    android:padding="10dp"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="20dp"
+
+    android:layout_height="wrap_content"
+    tools:context=".Activties.SelectedItem">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView
+                 android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="6pt"
+                android:text="Price $"
+                android:id="@+id/priceSe"
+                android:textColor="@color/design_default_color_primary"
+                android:layout_marginBottom="10dp"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Product Name"
+                android:fontFamily="sans-serif-condensed"
+                android:shadowRadius="20"
+                android:id="@+id/seletedName"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="70dp"
+                android:textSize="9pt"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/selectedImgId"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pha"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:textSize="6pt"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginRight="30dp"
+            android:text="is a prescription medical food for use only under is a prescription medical food for use only under the supervision of a physician for the clinical dietary management of depression "
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/informationSeId"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeWidth="2dp"
+            android:layout_margin="10dp"
+            app:icon="@drawable/baseline_shopping_cart_24"
+            android:shadowRadius="20"
+            app:cornerRadius="7dp"
+            android:text="Add to Orders"
+            android:textAllCaps="false"
+            android:id="@+id/addToOrders"
+            android:onClick="btnAdd"
+            app:strokeColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

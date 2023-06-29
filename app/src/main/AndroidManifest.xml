@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- adding internet permission -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pro2023"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activties.orders"
+            android:exported="false" />
+        <activity
+            android:name=".Activties.signup"
+            android:exported="false" />
+        <activity
+            android:name=".Activties.Recumnted"
+            android:exported="false" />
+        <activity
+            android:name=".Activties.SelectedItem"
+            android:exported="false" />
+        <activity
+            android:name=".Activties.EmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activties.doctorsDetiels"
+            android:exported="false" />
+        <activity
+            android:name=".Activties.creams"
+            android:exported="false" />
+        <activity
+            android:name=".Activties.Analgesic"
+            android:exported="false" />
+        <activity
+            android:name=".Activties.serums"
+            android:exported="false" />
+        <activity
+            android:name=".Activties.v"
+            android:exported="false" />
+        <activity
+            android:name=".Activties.MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".Activties.MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Fragments.FragmentsViewCategory"
+            android:exported="false" />
+        <activity
+            android:name=".Activties.baseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activties.SignInEmployee"
+            android:exported="false" />
+        <activity
+            android:name=".Activties.SiginInUser"
+            android:exported="false" />
+        <activity
+            android:name=".Activties.introActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activties.MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

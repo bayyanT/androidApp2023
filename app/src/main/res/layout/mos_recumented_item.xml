@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    android:orientation="vertical"
+    android:layout_width="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="10dp"
+    android:clickable="true"
+    app:cardCornerRadius="25dp"
+    android:padding="10dp"
+    android:layout_height="359dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/mostRecumntedName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Product Name"
+            android:textAlignment="center"
+            android:textSize="5pt" />
+
+        <ImageView
+            android:id="@+id/imgRecumntedId"
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:src="@drawable/pha" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/priceR"
+                android:padding="5dp"
+                android:text="Price $"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="7pt"/>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/shoppingRe"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/baseline_add_box_24" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+

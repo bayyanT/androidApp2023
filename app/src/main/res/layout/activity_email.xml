@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+     android:layout_margin="10dp"
+     android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".Activties.EmailActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:text="Email details"
+        android:padding="10dp"
+        android:textStyle="bold|italic"
+         android:textSize="15pt"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:hint="your Name"
+
+        android:id="@+id/userEmailName"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        app:endIconMode="clear_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:maxLength="41"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+       app:startIconDrawable="@drawable/baseline_email_24"
+        android:hint="ُEmail"
+        android:id="@+id/userEmailAddress"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:maxLength="41"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+
+        android:hint="your Name"
+        android:id="@+id/userquestion"
+        app:counterEnabled="true"
+        app:startIconDrawable="@drawable/baseline_question_mark_24"
+        app:counterMaxLength="1000"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLength="1001"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:shadowRadius="12"
+        android:layout_height="wrap_content"
+        app:cornerRadius="2dp"
+        android:onClick="btnSend"
+        android:layout_margin="15dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/black"
+        android:id="@+id/send"
+        android:text="Send"
+        android:textStyle="italic|bold"/>
+
+
+</LinearLayout>
